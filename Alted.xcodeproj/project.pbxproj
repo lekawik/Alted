@@ -17,6 +17,14 @@
 		80FB0AAA2A1A1A870030F375 /* AltedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB0AA92A1A1A870030F375 /* AltedUITests.swift */; };
 		80FB0AAC2A1A1A870030F375 /* AltedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB0AAB2A1A1A870030F375 /* AltedUITestsLaunchTests.swift */; };
 		80FB0AB92A1A1DA00030F375 /* PeristentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB0AB82A1A1DA00030F375 /* PeristentContainer.swift */; };
+		80FB0ABF2A1A21630030F375 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB0ABE2A1A21630030F375 /* APIManager.swift */; };
+		80FB0AC22A1A230D0030F375 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB0AC12A1A230D0030F375 /* Token.swift */; };
+		80FB0AC52A1A277C0030F375 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB0AC42A1A277C0030F375 /* Authenticator.swift */; };
+		80FB0ACA2A1A27E20030F375 /* Dictionnary++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB0AC92A1A27E20030F375 /* Dictionnary++.swift */; };
+		80FB0ACD2A1A28220030F375 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB0ACC2A1A28220030F375 /* AuthenticationError.swift */; };
+		80FB0ACF2A1A2A750030F375 /* BaseDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB0ACE2A1A2A750030F375 /* BaseDecodable.swift */; };
+		80FB0AD12A1A46F10030F375 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB0AD02A1A46F10030F375 /* LoginResponse.swift */; };
+		80FB0AD32A1A4AFE0030F375 /* UIFont++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB0AD22A1A4AFE0030F375 /* UIFont++.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,14 @@
 		80FB0AA92A1A1A870030F375 /* AltedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltedUITests.swift; sourceTree = "<group>"; };
 		80FB0AAB2A1A1A870030F375 /* AltedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltedUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		80FB0AB82A1A1DA00030F375 /* PeristentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeristentContainer.swift; sourceTree = "<group>"; };
+		80FB0ABE2A1A21630030F375 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		80FB0AC12A1A230D0030F375 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		80FB0AC42A1A277C0030F375 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		80FB0AC92A1A27E20030F375 /* Dictionnary++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionnary++.swift"; sourceTree = "<group>"; };
+		80FB0ACC2A1A28220030F375 /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
+		80FB0ACE2A1A2A750030F375 /* BaseDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDecodable.swift; sourceTree = "<group>"; };
+		80FB0AD02A1A46F10030F375 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		80FB0AD22A1A4AFE0030F375 /* UIFont++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont++.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +120,8 @@
 				80FB0A852A1A1A860030F375 /* AppDelegate.swift */,
 				80FB0A872A1A1A860030F375 /* SceneDelegate.swift */,
 				80FB0ABA2A1A1EA80030F375 /* Models */,
+				80FB0AC32A1A276D0030F375 /* API */,
+				80FB0ACB2A1A280D0030F375 /* Errors */,
 				80FB0ABB2A1A1EAF0030F375 /* Utilities */,
 				80FB0ABC2A1A1EBC0030F375 /* Views */,
 				80FB0A912A1A1A870030F375 /* Assets.xcassets */,
@@ -133,6 +151,7 @@
 		80FB0ABA2A1A1EA80030F375 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				80FB0AC02A1A23090030F375 /* API */,
 				80FB0A8E2A1A1A860030F375 /* Alted.xcdatamodeld */,
 			);
 			path = Models;
@@ -142,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				80FB0AB82A1A1DA00030F375 /* PeristentContainer.swift */,
+				80FB0AC82A1A27DB0030F375 /* Extensions */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -160,6 +180,42 @@
 				80FB0A892A1A1A860030F375 /* ViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		80FB0AC02A1A23090030F375 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				80FB0AC12A1A230D0030F375 /* Token.swift */,
+				80FB0ACE2A1A2A750030F375 /* BaseDecodable.swift */,
+				80FB0AD02A1A46F10030F375 /* LoginResponse.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		80FB0AC32A1A276D0030F375 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				80FB0ABE2A1A21630030F375 /* APIManager.swift */,
+				80FB0AC42A1A277C0030F375 /* Authenticator.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		80FB0AC82A1A27DB0030F375 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80FB0AC92A1A27E20030F375 /* Dictionnary++.swift */,
+				80FB0AD22A1A4AFE0030F375 /* UIFont++.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		80FB0ACB2A1A280D0030F375 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				80FB0ACC2A1A28220030F375 /* AuthenticationError.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,10 +348,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80FB0ACF2A1A2A750030F375 /* BaseDecodable.swift in Sources */,
+				80FB0ABF2A1A21630030F375 /* APIManager.swift in Sources */,
+				80FB0AD12A1A46F10030F375 /* LoginResponse.swift in Sources */,
+				80FB0ACA2A1A27E20030F375 /* Dictionnary++.swift in Sources */,
+				80FB0AC52A1A277C0030F375 /* Authenticator.swift in Sources */,
+				80FB0AC22A1A230D0030F375 /* Token.swift in Sources */,
 				80FB0AB92A1A1DA00030F375 /* PeristentContainer.swift in Sources */,
 				80FB0A902A1A1A860030F375 /* Alted.xcdatamodeld in Sources */,
 				80FB0A8A2A1A1A860030F375 /* ViewController.swift in Sources */,
+				80FB0AD32A1A4AFE0030F375 /* UIFont++.swift in Sources */,
 				80FB0A862A1A1A860030F375 /* AppDelegate.swift in Sources */,
+				80FB0ACD2A1A28220030F375 /* AuthenticationError.swift in Sources */,
 				80FB0A882A1A1A860030F375 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
